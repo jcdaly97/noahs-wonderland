@@ -1,7 +1,9 @@
 function PicsPage() {
-	<div>
-		Pics Page
-	</div>
+	return (
+		<div>
+			Pics Page
+		</div>
+	)
 }
 
 export default PicsPage;

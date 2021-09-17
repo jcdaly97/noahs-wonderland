@@ -1,7 +1,9 @@
 function SchedulePage() {
-	<div>
-		schedule
-	</div>
+	return (
+		<div>
+			schedule
+		</div>
+	)
 }
 
 export default SchedulePage;

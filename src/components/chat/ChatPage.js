@@ -1,7 +1,9 @@
 function ChatPage() {
-	<div>
-		chat page
-	</div>
+	return (
+		<div>
+			chat page
+		</div>
+	)
 }
 
 export default ChatPage;
