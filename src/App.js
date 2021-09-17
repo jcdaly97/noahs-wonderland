@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <Switch>
 
-          <Route path='/landing'>
+          <Route exact path='/'>
             <h1>Noah</h1>
           </Route>
 
