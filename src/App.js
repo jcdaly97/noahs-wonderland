@@ -1,20 +1,22 @@
-
 import './App.css';
-import TodoCard from './components/TodoCard'
 import NavBar from './components/NavBar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='App'>
-      <NavBar />
-      <h1>Noah</h1>
-      <div className='todo-widget'>
-        <h2 className='todo-header'>todos</h2>
-        <div className='todo-box'>
-          <TodoCard />
-        </div>
+    <Router>
+      <div className='App'>
+        <NavBar />
+        <Switch>
+
+          <Route path='/'>
+            <h1>Noah</h1>
+          </Route>
+
+        </Switch>
+
       </div>
-    </div>
+    </Router>
   );
 }
 

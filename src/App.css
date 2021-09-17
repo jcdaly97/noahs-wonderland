@@ -12,3 +12,8 @@
   border: 1px solid red;
   margin: 0 10% 0 10%;
 }
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+}
