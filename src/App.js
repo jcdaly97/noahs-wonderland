@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/styles.css';
 import NavBar from './components/NavBar';
 import MissionPage from './components/mission/MissionPage';
 import AboutPage from './components/about/AboutPage';

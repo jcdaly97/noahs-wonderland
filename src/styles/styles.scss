@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  /*border: 1px solid red;*/
+}
+
+.App {
+  text-align: center;
+  color: #61dafb;
+}
+
+.todo-widget{
+  color:aquamarine;
+  /*border: 1px solid red;*/
+  margin: 0 10% 0 10%;
+}
+
+.nav-bar {
+	border: 1px solid red;
+	height: 40px;
+	display: flex;
+  	justify-content: left;
+  	.home-button{
+		background-color: grey;
+	  	width: 10%;
+	  	border: 1px, solid red;
+	  	color:#61dafb;
+	  	text-decoration: none;
+  	}	
+  	.links{
+		width: 90%;
+		display: flex;
+		justify-content: space-evenly;
+		.nav-link {
+			color:#61dafb;
+	  		display: flex;
+	  		justify-content: space-evenly;
+	  		text-decoration: none;
+  		}
+  	}
+}
