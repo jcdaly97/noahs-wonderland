@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
+import bigDaddy from '../images/bigDaddy.png'
 
 function NavBar() {
 	return (
 		<div className='nav-bar'>
 			<div className='home-button'>
-				<Link to='/' className='home-button'>home</Link>
+				<Link to='/' className='home-button'>
+					{/*<img src={bigDaddy} className='big-daddy'></img>*/}
+					home
+				</Link>
 			</div>
 			<div className='links'>
 				<Link to='/mission' className='nav-link'>Our Mission</Link>

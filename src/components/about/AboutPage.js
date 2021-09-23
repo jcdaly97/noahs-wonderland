@@ -1,7 +1,12 @@
 function AboutPage() {
 	return (
 		<div>
-			About page
+			<div className='monkey'>
+				Monkey Eat Banana
+			</div>
+			<div className='banana'>
+				-Isa
+			</div>
 		</div>
 	)
 }

@@ -1,11 +1,23 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$headerFont: 'Fugaz One';
+
+:root{
   box-sizing: border-box;
   /*border: 1px solid red;*/
+  font-size: 16px;
+}
+body{
+	background-color: rgb(255, 252, 206);
+	font-family: $headerFont;
+	margin: 0;
+	padding: 0;
 }
 
 .App {
   text-align: center;
   color: #61dafb;
+
 }
 
 .todo-widget{
@@ -14,17 +26,29 @@
   margin: 0 10% 0 10%;
 }
 
+.monkey{
+	font-size: 100px;
+}
+
 .nav-bar {
 	border: 1px solid red;
 	height: 40px;
 	display: flex;
   	justify-content: left;
+	align-items: center;
   	.home-button{
-		background-color: grey;
+		
 	  	width: 10%;
 	  	border: 1px, solid red;
 	  	color:#61dafb;
 	  	text-decoration: none;
+		a{
+			background: transparent;
+		}
+		/*.big-daddy{
+			
+			max-width: 2rem;
+		}*/
   	}	
   	.links{
 		width: 90%;
