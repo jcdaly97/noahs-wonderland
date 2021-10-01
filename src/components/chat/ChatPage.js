@@ -1,11 +1,10 @@
 import ChatForm from "./ChatForm";
+import Messages from "./Messages";
 
 function ChatPage() {
 	return (
 		<div className='chat-widget'>
-			<div className='messages'>
-				messages go here
-			</div>
+			<Messages />
 			<ChatForm />
 		</div>
 	)
