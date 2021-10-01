@@ -1,21 +1,49 @@
 import { Link } from 'react-router-dom';
-import bigDaddy from '../images/bigDaddy.png'
+import daddyNoah from '../icons/daddyNoah.png'
+import elfNoah from '../icons/elfNoah.png'
+import fishNoah from '../icons/fishNoah.png'
+import glassNoah from '../icons/glassNoah.png'
+import seriousNoah from '../icons/seriousNoah.png'
 
 function NavBar() {
 	return (
 		<div className='nav-bar'>
-			<div className='home-button'>
-				<Link to='/' className='home-button'>
-					{/*<img src={bigDaddy} className='big-daddy'></img>*/}
-					home
-				</Link>
-			</div>
 			<div className='links'>
-				<Link to='/mission' className='nav-link'>Our Mission</Link>
-				<Link to='/pics' className='nav-link'>Pics</Link>
-				<Link to='/schedule' className='nav-link'>Schedule</Link>
-				<Link to='/chat' className='nav-link'>Chat</Link>
-				<Link to='/about' className='nav-link'>About</Link>
+
+				<div className='nav-card'>
+					<Link to='/mission' className='nav-link'>
+						<img src={daddyNoah}></img>
+					</Link>
+					<h4 className='link-text'>our mission</h4>
+				</div>
+
+				<div className='nav-card'>
+					<Link to='/pics' className='nav-link'>
+						<img src={elfNoah}></img>
+					</Link>
+					<h4 className='link-text'>pics</h4>
+				</div>
+
+				<div className='nav-card'>
+					<Link to='/schedule' className='nav-link'>
+						<img src={fishNoah}></img>
+					</Link>
+					<h4 className='link-text'>schedule</h4>
+				</div>
+
+				<div className='nav-card'>
+					<Link to='/chat' className='nav-link'>
+						<img src={glassNoah}></img>
+					</Link>
+					<h4 className='link-text'>chat</h4>
+				</div>
+
+				<div className='nav-card'>
+					<Link to='/about' className='nav-link'>
+						<img src={seriousNoah}></img>
+					</Link>
+					<h4 className='link-text'>about</h4>
+				</div>
 			</div>
 		</div>
 	);

@@ -13,34 +13,35 @@ function App() {
     <Router>
       <div className='App'>
         <NavBar />
-        <Switch>
+        <main>
+          <Switch>
 
-          <Route exact path='/'>
-            <h1>Noah</h1>
-          </Route>
+            <Route exact path='/'>
+              <h1>Noah</h1>
+            </Route>
 
-          <Route path='/mission'>
-            <MissionPage />
-          </Route>
+            <Route path='/mission'>
+              <MissionPage />
+            </Route>
 
-          <Route path='/pics'>
-            <PicsPage />
-          </Route>
+            <Route path='/pics'>
+              <PicsPage />
+            </Route>
 
-          <Route path='/schedule'>
-            <SchedulePage />
-          </Route>
+            <Route path='/schedule'>
+              <SchedulePage />
+            </Route>
 
-          <Route path='/chat'>
-            <ChatPage />
-          </Route>
+            <Route path='/chat'>
+              <ChatPage />
+            </Route>
 
-          <Route path='/about'>
-            <AboutPage />
-          </Route>
+            <Route path='/about'>
+              <AboutPage />
+            </Route>
 
-        </Switch>
-
+          </Switch>
+        </main>
       </div>
     </Router>
   );
