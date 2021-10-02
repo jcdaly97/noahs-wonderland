@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { newUserMessage } from '../../state/actions/actions';
+import { connect } from 'react-redux'
 
 function ChatForm(props) {
 	const [newMessage, setNewMessage] = useState('');
@@ -30,4 +32,6 @@ function ChatForm(props) {
 	)
 }
 
-export default ChatForm;
+export default ChatForm
+
+//export default connect(mapStateToProps, { newUserMessage })(ChatForm);
