@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { newUserMessage } from '../../state/actions/actions';
 import { connect } from 'react-redux'
 
-function ChatForm(props) {
+function ChatForm(chat) {
 	const [newMessage, setNewMessage] = useState('');
 
 	const handleSubmit = async (e) => {
@@ -12,6 +12,7 @@ function ChatForm(props) {
 		//if the code is 13 (enter) then submit the message
 		if (code === 13) {
 			console.log(newMessage)
+			chat.newUserMessage(newMessage)
 			setNewMessage('')
 		}
 
@@ -32,6 +33,8 @@ function ChatForm(props) {
 	)
 }
 
-export default ChatForm
+const mapStateToProps = state => ({
+	chat: state.chat.messages
+})
 
-//export default connect(mapStateToProps, { newUserMessage })(ChatForm);
+export default connect(mapStateToProps, { newUserMessage })(ChatForm);

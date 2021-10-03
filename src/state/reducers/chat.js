@@ -20,7 +20,12 @@ export default (state = initialState, action) => {
 		case INPUT_FAILED:
 			console.log(payload)
 			return {
-				...state
+				...state,
 			}
+		default:
+			return {
+				...state,
+			}
+
 	}
 }
