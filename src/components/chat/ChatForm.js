@@ -12,7 +12,9 @@ function ChatForm(chat) {
 		//if the code is 13 (enter) then submit the message
 		if (code === 13) {
 			console.log(newMessage)
+			//dispatch action
 			chat.newUserMessage(newMessage)
+			//reset form state
 			setNewMessage('')
 		}
 
@@ -33,8 +35,4 @@ function ChatForm(chat) {
 	)
 }
 
-const mapStateToProps = state => ({
-	chat: state.chat.messages
-})
-
-export default connect(mapStateToProps, { newUserMessage })(ChatForm);
+export default connect(null, { newUserMessage })(ChatForm);

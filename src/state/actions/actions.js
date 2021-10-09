@@ -1,5 +1,5 @@
 //import types
-import { INPUT_SUCCESS, INPUT_FAILED } from './types'
+import { INPUT_SUCCESS, INPUT_FAILED, SESSION_SUCCESS, SESSION_FAILED, BOT_RESPONSE_SUCCESS, BOT_RESPONSE_FAILED } from './types'
 
 //function to handle new user messages
 export const newUserMessage = (message) => async (dispatch) => {

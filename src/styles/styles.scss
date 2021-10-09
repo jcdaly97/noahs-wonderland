@@ -60,64 +60,16 @@ main{
 	}
 }
 
-
-
-
-
-
-/*
-:root{
-  box-sizing: border-box;
-  font-size: 16px;
-}
-body{
-	background-color: rgb(255, 252, 206);
-	font-family: $headerFont;
-	margin: 0;
-	padding: 0;
-}
-
-.App {
-  text-align: center;
-  color: #61dafb;
-  display: flex;
-}
-
-.todo-widget{
-  color:aquamarine;
-  margin: 0 10% 0 10%;
-}
-
-.monkey{
-	font-size: 100px;
-}
-
-.nav-bar {
-	border: 1px solid red;
-	//height: 40px;
+.chat-page{
+	height: 100vh;
+	border: 1px dotted red;
 	display: flex;
-	flex-direction: column;
-  	//justify-content: left;
 	align-items: center;
-  	.home-button{
-		
-	  	width: 10%;
-	  	border: 1px, solid red;
-	  	color:#61dafb;
-	  	text-decoration: none;
-		a{
-			background: transparent;
+	justify-content: center;
+	.chat-widget{
+		border: 1px dotted red;
+		.message-queue{
+			border: 1px dotted blue;
 		}
-  	}	
-  	.links{
-		width: 90%;
-		display: flex;
-		justify-content: space-evenly;
-		.nav-link {
-			color:#61dafb;
-	  		display: flex;
-	  		justify-content: space-evenly;
-	  		text-decoration: none;
-  		}
-  	}
-}*/
+	}
+}

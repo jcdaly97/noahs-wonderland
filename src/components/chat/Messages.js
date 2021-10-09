@@ -4,12 +4,11 @@ function Messages(chat) {
 	console.log(chat)
 	console.log(chat.messages.length)
 	return (
-		<>
-			<div className='messages'>
-				messages here
-			</div>
-			{chat.messages.length === 0 ? "" : chat.messages.map((msg) => <div>{msg.message}</div>)}
-		</>
+		<div className='message-queue'>
+			{chat.messages.length === 0 ? <div>start chatting</div> : chat.messages.map((msg) =>
+				<div className={msg.type}>{msg.message}</div>)
+			}
+		</div>
 	)
 
 }
