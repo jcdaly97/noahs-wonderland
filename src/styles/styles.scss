@@ -62,6 +62,7 @@ main{
 
 .chat-page{
 	height: 100vh;
+	max-width: 100%;
 	border: 1px dotted red;
 	display: flex;
 	align-items: center;
@@ -78,7 +79,9 @@ main{
 				margin-top: 2%;
 				margin-bottom: 2%;
 				margin-right: 1%;
-				border: 1px dotted green;
+				background-color: rgb(169, 160, 221);
+				
+				border-radius: 5px;
 				max-width: 50%;
 				align-self: flex-end;
 
